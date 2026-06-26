@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { supabase } from './supabaseClient'; // Adjusted path if necessary
+import { supabase } from './lib/supabaseClient'; // Adjusted path if necessary
 import { Mail, Lock, Eye, EyeOff, ShieldCheck, Users, GraduationCap } from 'lucide-react';
 
 export default function App() {
@@ -89,24 +89,27 @@ export default function App() {
       
       {/* Visual Background Structure - Mimicking the blurred school atmosphere from 3a171f14-3cfa-4506-889d-d1bbc2a9591b.png */}
       <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-25 filter blur-[2px]" 
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop')` }} 
+        style={{ backgroundImage: `url('src/assets/images/aprils-backgoround.png')` }} 
       />
 
       {/* Main Container Core */}
       <div className="relative z-10 flex-1 flex items-center justify-center w-full px-4 pt-10 pb-16">
         <div className="bg-white/95 backdrop-blur-md w-full max-w-[460px] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-8 sm:p-10 border border-white/20 text-center">
           
-          {/* Branded Vector Logo Emblem Container */}
-          <div className="flex justify-center mb-5">
-            <div className="relative flex items-center justify-center w-28 h-28 bg-[#2A4D22] text-white rounded-full shadow-inner border-4 border-white">
-              <div className="flex flex-col items-center">
-                <GraduationCap size={44} className="stroke-[1.5]" />
-                <span className="text-[9px] font-black tracking-widest uppercase mt-0.5">APRIL'S</span>
-                <span className="text-[7px] tracking-widest text-emerald-200 font-bold uppercase -mt-0.5">ACADEMY</span>
-              </div>
-            </div>
-          </div>
-
+          {/* Branded Official Logo  */}
+<div className="flex justify-center mb-5">
+  <div className="relative flex items-center justify-center w-32 h-32 rounded-full overflow-hidden">
+    <img 
+      src="src\assets\images\aprils.png" 
+      alt="April's Academy Official Logo"
+      className="w-full h-full object-contain"
+      onError={(e) => {
+        // Fallback styling if path is mistyped or asset is missing
+        e.currentTarget.src = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=150";
+      }}
+    />
+  </div>
+</div>
           {/* Heading Module */}
           <h1 className="text-3xl font-black tracking-tight text-[#2A4D22] uppercase">WELCOME BACK</h1>
           <p className="text-sm font-medium text-zinc-500 mt-1 mb-8">Sign in to your account to continue</p>
