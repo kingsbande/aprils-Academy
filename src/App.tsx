@@ -89,10 +89,10 @@ export default function App() {
       
       {/* Visual Background Structure - Mimicking the blurred school atmosphere from 3a171f14-3cfa-4506-889d-d1bbc2a9591b.png */}
       <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-25 filter blur-[2px]" 
-        style={{ backgroundImage: `url('src/assets/images/aprils-backgoround.png')` }} 
+        style={{ backgroundImage: `url('/assets/images/aprils-backgoround.png')` }} 
       />
 
-      {/* Main Container Core */}
+      {/* Main Container Core ee */}
       <div className="relative z-10 flex-1 flex items-center justify-center w-full px-4 pt-10 pb-16">
         <div className="bg-white/95 backdrop-blur-md w-full max-w-[460px] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-8 sm:p-10 border border-white/20 text-center">
           
@@ -100,12 +100,12 @@ export default function App() {
 <div className="flex justify-center mb-5">
   <div className="relative flex items-center justify-center w-32 h-32 rounded-full overflow-hidden">
     <img 
-      src="src\assets\images\aprils.png" 
+      src="/assets/images/aprils.png"
       alt="April's Academy Official Logo"
       className="w-full h-full object-contain"
       onError={(e) => {
         // Fallback styling if path is mistyped or asset is missing
-        e.currentTarget.src = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=150";
+        e.currentTarget.src = "/assets/images/aprils.png";
       }}
     />
   </div>
@@ -125,7 +125,7 @@ export default function App() {
           <form onSubmit={handleLogin} className="space-y-5 text-left">
             <div>
               <label className="block text-xs font-bold text-zinc-700 uppercase tracking-wide mb-1.5 ml-1">
-                Username or Email
+                Username or Emailll
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-400">
