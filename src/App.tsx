@@ -125,7 +125,7 @@ export default function App() {
           <form onSubmit={handleLogin} className="space-y-5 text-left">
             <div>
               <label className="block text-xs font-bold text-zinc-700 uppercase tracking-wide mb-1.5 ml-1">
-                Username or Emailll
+                Username or Email
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-400">
@@ -209,17 +209,17 @@ export default function App() {
       {/* Styled Institutional Curved Footer Module from 3a171f14-3cfa-4506-889d-d1bbc2a9591b.png */}
       <div className="relative z-10 w-full bg-[#1A3315] border-t-4 border-[#2A4D22] px-6 py-6 text-white text-center">
         
-        {/* Core Institutional Value Highlights Grid */}
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 border-b border-white/10 pb-4 mb-4 text-xs font-medium tracking-wide">
-          <div className="flex items-center justify-center space-x-2 text-emerald-200">
+        {/* Core Institutional Value Highlights Flex Row */}
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4 border-b border-white/10 pb-4 mb-4 text-xs font-medium tracking-wide">
+          <div className="min-w-[160px] flex items-center justify-center gap-2 text-emerald-200">
             <ShieldCheck size={16} />
             <span>Secure Access</span>
           </div>
-          <div className="flex items-center justify-center space-x-2 text-emerald-200 border-y md:border-y-0 md:border-x border-white/10 py-2 md:py-0">
+          <div className="min-w-[160px] flex items-center justify-center gap-2 text-emerald-200 border-y border-white/10 py-2 md:border-y-0 md:border-x md:px-4 md:py-0">
             <Users size={16} />
             <span>Trusted by Educators</span>
           </div>
-          <div className="flex items-center justify-center space-x-2 text-emerald-200">
+          <div className="min-w-[160px] flex items-center justify-center gap-2 text-emerald-200">
             <GraduationCap size={16} />
             <span>Empowering Education</span>
           </div>
