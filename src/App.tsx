@@ -187,7 +187,7 @@ export default function App() {
             </button>
           </form>
 
-          {/* Alternate Navigation Routing Action Matrix */}
+          {/* Alternate Navigation Routing Action Matrix 
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-zinc-200"></div></div>
             <div className="relative flex justify-center text-xs font-bold uppercase"><span className="bg-white px-3 text-zinc-400">OR</span></div>
@@ -196,7 +196,7 @@ export default function App() {
           <button className="w-full py-3 border border-[#2A4D22] text-[#2A4D22] hover:bg-[#2A4D22]/5 font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition">
             <Users size={16} />
             <span>Login with another account</span>
-          </button>
+          </button>*/}
 
           {/* Helpdesk Forwarding Disclaimer */}
           <p className="text-xs font-medium text-zinc-500 mt-6">
