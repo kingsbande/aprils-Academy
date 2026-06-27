@@ -46,7 +46,7 @@ export default function App() {
       <div className="hidden md:block h-4" />
 
       {/* Transparent Login Card Container */}
-      <div className="w-full max-w-md my-auto bg-white/100 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-100 p-6 sm:p-10 z-10 transition-all duration-300">
+      <div className="w-full max-w-md my-auto bg-white/100 backdrop-blur-md rounded-[29px] shadow-2xl border border-slate-100 p-6 sm:p-10 z-10 transition-all duration-300">
         
         {/* Branding Header with Circular Photo Holder */}
         <div className="flex flex-col items-center mb-6">
