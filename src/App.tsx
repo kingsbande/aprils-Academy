@@ -125,21 +125,11 @@ export default function App() {
           </div>
 
           {/* Interactive Form Actions */}
-          <div className="space-y-4 pt-2">
+          <div className="space-y-3 pt-2">
             <Button type="submit" loading={loading}>
               {loading ? 'AUTHENTICATING...' : 'LOGIN'}
             </Button>
 
-             {/*<div className="relative flex py-1 items-center">
-              <div className="flex-grow border-t border-slate-200"></div>
-              <span className="flex-shrink mx-4 text-xs font-bold uppercase tracking-widest text-slate-400">OR</span>
-              <div className="flex-grow border-t border-slate-200"></div>
-            </div>
-
-            <Button type="button" variant="outline">
-              <Users size={18} className="text-slate-500" />
-              <span>Login with another account</span>
-            </Button>*/}
           </div>
         </form>
 
@@ -151,8 +141,7 @@ export default function App() {
         </div>
 
       </div>
-
-      <AuthFooter />
+         <AuthFooter />
     </div>
   );
 }

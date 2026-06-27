@@ -1,10 +1,11 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
+import type { InputHTMLAttributes, ReactNode } from 'react';
 import { type LucideIcon } from 'lucide-react';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
   icon: LucideIcon;
-  rightElement?: React.ReactNode;
+  rightElement?: ReactNode;
 }
 
 // We pass the types directly into forwardRef<ElementType, PropsType>
