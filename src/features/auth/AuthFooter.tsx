@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShieldCheck, Users, GraduationCap } from 'lucide-react';
 
 export function AuthFooter() {
