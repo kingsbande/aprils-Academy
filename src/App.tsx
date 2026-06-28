@@ -58,7 +58,7 @@ export default function App() {
             />
           </div>
           <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-[#2A4D22] text-center uppercase">
-            Welcome Back
+            Welcome
           </h1>
           <p className="text-sm text-slate-600 mt-1 text-center font-medium">
             Sign in to your account to continue
